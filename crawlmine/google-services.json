@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "974759422795",
+    "firebase_url": "https://majorpro-a75d3.firebaseio.com",
+    "project_id": "majorpro-a75d3",
+    "storage_bucket": "majorpro-a75d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974759422795:android:b9e77559d8592d39",
+        "android_client_info": {
+          "package_name": "trainedge.crawlmine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974759422795-k68clemum5st8s92erljaomvqr9tq7q1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "trainedge.crawlmine",
+            "certificate_hash": "8825a5300c9207a1b19a21ce1aff8c0a0999344e"
+          }
+        },
+        {
+          "client_id": "974759422795-3q0l4ki089c330ugmf392mkp3c3cc7ll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2vCcR3ygSU-so9F6mWSwWlkuYX7PKCpA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974759422795-3q0l4ki089c330ugmf392mkp3c3cc7ll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CrawlMine</string>
+    <string name="login_hint">Click On Facebook Button For 1-click login</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
