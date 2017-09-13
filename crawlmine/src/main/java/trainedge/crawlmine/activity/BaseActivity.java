@@ -1,10 +1,14 @@
 package trainedge.crawlmine.activity;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.support.design.widget.Snackbar;
+import android.support.v13.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -71,6 +75,21 @@ public class BaseActivity extends AppCompatActivity {
                 dialog.show();
             }
 
+    public boolean checkPermission(String permission, int requestCode) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(permission) != PackageManager.PERMISSION_GRANTED &&
+                    ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{permission}, requestCode);
+                return false;
+            } else {
+                Toast.makeText(this, "permission granted", Toast.LENGTH_SHORT).show();
+                return true;
+            }
+        } else {
+            return true;
+        }
+    }
+
             public void log(String data){
 
 
@@ -78,4 +97,23 @@ public class BaseActivity extends AppCompatActivity {
 
 
             }
+
+
+            //camera
+
+    public boolean handlePermission(String permission, int requestCode) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(permission) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{permission}, requestCode);
+                return false;
+            } else {
+                return true;
+            }
+        }
+        return true;
+    }
+
+    public void snack(View view, String message){
+        Snackbar.make(view,message,Snackbar.LENGTH_LONG).show();
+    }
 }
