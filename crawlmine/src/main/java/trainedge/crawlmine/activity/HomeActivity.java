@@ -95,9 +95,9 @@ public class HomeActivity extends BaseActivity implements NavigationView.OnNavig
         cardview2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent i= new Intent(HomeActivity.this,CameraActivity.class);  //Not Assigned
-//                Bundle bundle2=ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.anime1,R.anim.anime2).toBundle();
-//                startActivity(i,bundle2);
+                Intent i= new Intent(HomeActivity.this,ScanActivity.class);  //Not Assigned
+                Bundle bundle2=ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.anime1,R.anim.anime2).toBundle();
+               startActivity(i,bundle2);
             }
         });
 
@@ -105,7 +105,7 @@ public class HomeActivity extends BaseActivity implements NavigationView.OnNavig
         cardview1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i= new Intent(HomeActivity.this,ViewActivity.class);  //ViewActivity
+                Intent i= new Intent(HomeActivity.this,CanvasActivity.class);  //ViewActivity
                 Bundle bundle1=ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.anime1,R.anim.anime2).toBundle();
                 startActivity(i,bundle1);
             }

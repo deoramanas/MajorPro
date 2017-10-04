@@ -9,7 +9,7 @@
     <string name="fb_login_protocol_scheme">fb1096222123841280</string>
     <string name="title_activity_camera">CameraActivity</string>
 
-    <string name="album_name">xaidworkz_camera</string>
+    <string name="album_name">Smart_Scanner_Cam</string>
     <string name="selection_label">Click on menu icons below to launch selection app or click here to launch IMAGE Selection</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
